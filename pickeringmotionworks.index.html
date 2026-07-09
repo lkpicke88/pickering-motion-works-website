@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pickering Motion Works | Cinematic Production & Premium Post-Production</title>
+  <meta name="description" content="A veteran-owned boutique production and post-production studio based in Silver Spring, Maryland, serving clients nationwide. Specialized in large-format cinematography, reference HDR color grading, and Dolby Atmos mixing.">
+
+  <!-- Favicon — replace /favicon.ico with your actual favicon file path -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Open Graph — update YOUR_DOMAIN and image path once live -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.pickeringmotionworks.com/">
+  <meta property="og:title" content="Pickering Motion Works | Cinematic Production & Premium Post-Production">
+  <meta property="og:description" content="A veteran-owned boutique production and post-production studio. Large-format cinematography, reference HDR color grading, and Dolby Atmos mixing — serving clients nationwide from Silver Spring, Maryland.">
+  <meta property="og:image" content="https://www.pickeringmotionworks.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Pickering Motion Works">
+
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pickering Motion Works | Cinematic Production & Premium Post-Production">
+  <meta name="twitter:description" content="Veteran-owned boutique production and post-production studio. HDR color grading, Dolby Atmos mixing, and large-format cinematography — nationwide.">
+  <meta name="twitter:image" content="https://www.pickeringmotionworks.com/og-image.jpg">
+
+  <!-- Google Analytics — replace GA_MEASUREMENT_ID with your actual ID (e.g. G-XXXXXXXXXX) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .display { font-family: 'Cormorant Garamond', serif; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .fade-up-1{animation-delay:.08s} .fade-up-2{animation-delay:.18s}
+    .fade-up-3{animation-delay:.28s} .fade-up-4{animation-delay:.38s}
+    .pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+    @media(prefers-reduced-motion:reduce){.fade-up,.pulse-dot{animation:none}}
+    .gold-line { background:linear-gradient(90deg,#C8A96A 0%,#E8D4A0 50%,#C8A96A 100%); }
+
+    .logo-wordmark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.15rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: #15202B;
+      line-height: 1;
+    }
+    .logo-wordmark span { color: #C8A96A; }
+    .logo-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #7C6A48;
+      margin-top: 5px;
+      font-weight: 400;
+    }
+
+    .nav-link { position:relative; transition:color 0.2s; font-size:0.82rem; font-weight:500; color:#475569; }
+    .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:1px; background:#C8A96A; transition:width 0.25s ease; }
+    .nav-link:hover::after { width:100%; }
+    .card-hover { transition:box-shadow 0.25s ease,transform 0.25s ease,border-color 0.25s ease; }
+    .card-hover:hover { transform:translateY(-2px); box-shadow:0 12px 40px rgba(200,169,106,0.13); border-color:#C8A96A !important; }
+    .pill { display:inline-flex; align-items:center; gap:6px; padding:5px 14px; border-radius:999px; font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:500; border:1px solid #D8CEBF; background:rgba(255,255,255,0.72); color:#52606D; backdrop-filter:blur(6px); }
+    .pill-gold { border-color:rgba(200,169,106,0.6); background:rgba(255,255,255,0.9); color:#7C6A48; font-weight:600; }
+    .section-eyebrow { font-size:0.68rem; letter-spacing:0.28em; text-transform:uppercase; color:#6B7280; font-weight:500; }
+    .nation-badge { display:inline-flex; align-items:center; gap:8px; padding:6px 16px; border-radius:999px; background:linear-gradient(135deg,rgba(200,169,106,0.15),rgba(200,169,106,0.06)); border:1px solid rgba(200,169,106,0.4); font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:#7C6A48; font-weight:600; }
+    .intake-input { width:100%; border-radius:12px; border:1px solid #D8CEBF; background:white; padding:12px 16px; font-size:0.875rem; color:#15202B; outline:none; transition:border-color 0.2s; font-family:'Inter',sans-serif; }
+    .intake-input:focus { border-color:#C8A96A; }
+    .intake-label { display:block; font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:600; color:#6B7280; margin-bottom:6px; }
+    /* FIX 1: corrected user-select (was incorrectly written as select-user) */
+    .check-item { display:flex; align-items:center; gap:10px; font-size:0.8rem; color:#475569; padding:8px 12px; border-radius:10px; border:1px solid #E1D9CE; background:white; cursor:pointer; transition:border-color 0.2s; user-select:none; }
+    .check-item:hover { border-color:#C8A96A; }
+    .check-item input { accent-color:#C8A96A; }
+    .tab-btn { padding:10px 22px; border-radius:12px; font-size:0.78rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; cursor:pointer; border:1px solid #D8CEBF; background:transparent; color:#6B7280; transition:all 0.2s; }
+    .tab-btn.active { background:#15202B; color:#F7F3EC; border-color:#15202B; }
+    .tab-panel { display:none; }
+    .tab-panel.active { display:block; animation: fadeUp 0.4s ease both; }
+    .cap-card { border-radius:20px; border:1px solid #E1D9CE; background:rgba(255,255,255,0.8); padding:1.5rem; }
+    .cap-icon { width:40px; height:40px; border-radius:12px; background:rgba(200,169,106,0.1); border:1px solid rgba(200,169,106,0.25); display:flex; align-items:center; justify-content:center; margin-bottom:14px; flex-shrink:0; }
+    .cap-list { list-style:none; padding:0; margin:0.75rem 0 0; }
+    .cap-list li { font-size:0.82rem; color:#475569; padding:5px 0; border-bottom:1px solid #F0EBE3; display:flex; align-items:flex-start; gap:8px; line-height:1.5; }
+    .cap-list li:last-child { border-bottom:none; }
+    .cap-list li::before { content:'→'; color:#C8A96A; font-size:0.75rem; margin-top:2px; flex-shrink:0; }
+    .room-stat { text-align:center; padding:1rem 1.25rem; border-radius:16px; border:1px solid #E1D9CE; background:rgba(255,255,255,0.8); }
+    .room-stat-val { font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:500; color:#15202B; line-height:1; }
+    .room-stat-label { font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:#7C6A48; margin-top:4px; }
+  </style>
+</head>
+<body class="min-h-screen antialiased bg-gradient-to-br from-[#F7F3EC] via-[#EFE8DD] to-[#E8DED0] text-[#15202B]">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 border-b" style="border-color:rgba(216,206,191,0.6);background:rgba(247,243,236,0.94);backdrop-filter:blur(18px);">
+  <div class="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between gap-8">
+    <a href="#" aria-label="Pickering Motion Works home" class="inline-flex items-center gap-4 group">
+      <div style="width:56px;height:56px;border-radius:16px;background:#15202B;border:1px solid rgba(200,169,106,0.45);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;gap:2px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#C8A96A;letter-spacing:0.06em;line-height:1;">PMW</div>
+        <div style="width:26px;height:1px;background:rgba(200,169,106,0.5);"></div>
+      </div>
+      <div>
+        <div class="logo-wordmark">Pickering <span>Motion</span> Works</div>
+        <div class="logo-sub">Cinematic Production &nbsp;·&nbsp; Premium Post</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-7" aria-label="Main Navigation">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#studios" class="nav-link">Studios</a>
+      <a href="#reach" class="nav-link">Reach</a>
+      <a href="#contact" class="rounded-xl text-sm font-semibold px-5 py-2.5 transition" style="background:#15202B;color:#F7F3EC;" onmouseover="this.style.background='#C8A96A'" onmouseout="this.style.background='#15202B'">Start a Project</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-xl border" style="border-color:#D8CEBF;background:rgba(255,255,255,0.7);" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="mobile-bar block w-5 h-0.5 rounded-full transition-all duration-300" style="background:#15202B;"></span>
+      <span class="mobile-bar block w-5 h-0.5 rounded-full transition-all duration-300" style="background:#15202B;"></span>
+      <span class="mobile-bar block w-5 h-0.5 rounded-full transition-all duration-300" style="background:#15202B;"></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu drawer -->
+  <div id="mobile-menu" class="md:hidden hidden border-t px-6 pb-6 pt-4" style="border-color:rgba(216,206,191,0.4);">
+    <nav class="flex flex-col gap-1" aria-label="Mobile Navigation">
+      <a href="#services" onclick="closeMobileMenu()" class="text-sm font-medium py-3 border-b" style="color:#475569;border-color:rgba(216,206,191,0.4);">Services</a>
+      <a href="#about" onclick="closeMobileMenu()" class="text-sm font-medium py-3 border-b" style="color:#475569;border-color:rgba(216,206,191,0.4);">About</a>
+      <a href="#studios" onclick="closeMobileMenu()" class="text-sm font-medium py-3 border-b" style="color:#475569;border-color:rgba(216,206,191,0.4);">Studios</a>
+      <a href="#reach" onclick="closeMobileMenu()" class="text-sm font-medium py-3 border-b" style="color:#475569;border-color:rgba(216,206,191,0.4);">Reach</a>
+      <a href="#contact" onclick="closeMobileMenu()" class="mt-3 text-center rounded-xl text-sm font-semibold px-5 py-3 transition" style="background:#15202B;color:#F7F3EC;">Start a Project</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="mx-auto max-w-7xl px-6 pt-16 pb-24 md:pt-24 md:pb-32">
+  <div class="fade-up fade-up-1 mb-6 flex flex-wrap gap-3">
+    <span class="nation-badge"><span class="pulse-dot" style="width:7px;height:7px;border-radius:50%;background:#facc15;display:inline-block;"></span>Opening 2026 — Inquiries welcome</span>
+    <span class="pill">Cinematography</span>
+    <span class="pill">HDR Color</span>
+    <span class="pill">Dolby Atmos</span>
+    <span class="pill">Agency &amp; Institutional</span>
+  </div>
+  <div class="grid md:grid-cols-[1.25fr_0.75fr] gap-14 md:items-end">
+    <div>
+      <h1 class="display fade-up fade-up-2" style="font-size:clamp(3rem,7vw,5.5rem);font-weight:500;line-height:1.08;letter-spacing:-0.01em;color:#15202B;">
+        Where cinematic<br><em style="color:#C8A96A;">precision</em> meets<br>post-production<br><em>confidence.</em>
+      </h1>
+      <div class="gold-line fade-up fade-up-2 mt-5 mb-6" style="height:2px;width:80px;border-radius:2px;"></div>
+      <p class="fade-up fade-up-3 text-lg leading-8 max-w-xl" style="color:#475569;">
+        Pickering Motion Works is a veteran-owned boutique production and post-production studio serving filmmakers, agencies, labels, and institutional clients across the DMV and nationwide — combining large-format cinematography, reference HDR finishing, and Dolby Atmos immersive mixing under one refined workflow.
+      </p>
+      <div class="fade-up fade-up-4 mt-8 flex flex-wrap gap-4">
+        <a href="#contact" class="rounded-2xl px-7 py-3.5 text-sm font-semibold text-white transition" style="background:#C8A96A;box-shadow:0 4px 18px rgba(200,169,106,0.35);" onmouseover="this.style.background='#B8996A'" onmouseout="this.style.background='#C8A96A'">Begin a Project</a>
+        <a href="#services" class="rounded-2xl px-7 py-3.5 text-sm font-semibold transition" style="border:1px solid #D8CEBF;background:rgba(255,255,255,0.75);color:#15202B;" onmouseover="this.style.background='white'" onmouseout="this.style.background='rgba(255,255,255,0.75)'">Explore Capabilities</a>
+      </div>
+      <div class="mt-10 flex flex-wrap gap-2">
+        <span class="pill pill-gold">Agencies &amp; Institutions</span>
+        <span class="pill">Producers &amp; Directors</span>
+        <span class="pill">Independent Filmmakers</span>
+        <span class="pill">Labels &amp; Artists</span>
+        <span class="pill">Brands &amp; Advertising</span>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div style="padding:1.5rem;border-radius:20px;border:1px solid #D8CEBF;background:rgba(255,255,255,0.72);backdrop-filter:blur(8px);">
+        <div class="section-eyebrow mb-2">Positioning</div>
+        <div class="display" style="font-size:1.5rem;font-weight:500;line-height:1.25;color:#15202B;">Boutique quality. Nationwide reach.</div>
+        <p class="mt-3 text-sm leading-7" style="color:#475569;">From on-location capture to immersive finishing — a single, connected pipeline wherever you are.</p>
+      </div>
+      <div class="rounded-3xl p-6" style="background:linear-gradient(135deg,#F4EEE3,#E5D9C7);border:1px solid #D8CEBF;">
+        <div class="section-eyebrow mb-2">Core Offering</div>
+        <div class="display" style="font-size:1.4rem;font-weight:500;color:#15202B;">Picture · Sound · Motion · Delivery</div>
+      </div>
+      <div style="padding:1.5rem;border-radius:20px;border:1px solid rgba(200,169,106,0.4);background:rgba(255,255,255,0.72);">
+        <div class="section-eyebrow mb-3">Veteran-Owned</div>
+        <div class="text-sm leading-6" style="color:#475569;">Founded and operated by a U.S. veteran with deep institutional experience — building a studio designed to bring process discipline and creative excellence to every project.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NATIONWIDE REACH -->
+<!-- FIX 2: removed stray "relative" text from style attribute -->
+<section id="reach" style="background:linear-gradient(90deg,#15202B 0%,#1E2E3F 100%);border-top:1px solid rgba(200,169,106,0.2);border-bottom:1px solid rgba(200,169,106,0.2);">
+  <div class="mx-auto max-w-7xl px-6 py-10">
+    <div class="grid md:grid-cols-[1fr_auto] gap-8 items-center">
+      <div>
+        <div class="section-eyebrow mb-3" style="color:rgba(200,169,106,0.7);">Where We Work</div>
+        <h2 class="display" style="font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:500;color:#F7F3EC;line-height:1.2;">Based in the DMV. Available everywhere.</h2>
+        <p class="mt-3 text-sm leading-7 max-w-2xl" style="color:rgba(247,243,236,0.6);">Operating from Silver Spring, Maryland with nationwide project deployment capability — serving agencies, studios, labels, and brands across every major market.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <div class="text-center px-5 py-4 rounded-2xl min-w-[100px]" style="background:rgba(255,255,255,0.06);border:1px solid rgba(200,169,106,0.2);">
+          <div class="display" style="font-size:2rem;font-weight:600;color:#C8A96A;">DMV</div>
+          <div style="font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,243,236,0.5);margin-top:2px;">Home base</div>
+        </div>
+        <div class="text-center px-5 py-4 rounded-2xl min-w-[100px]" style="background:rgba(255,255,255,0.06);border:1px solid rgba(200,169,106,0.2);">
+          <div class="display" style="font-size:1.35rem;font-weight:600;color:#C8A96A;line-height:1.1;">Nation<br>wide</div>
+          <div style="font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,243,236,0.5);margin-top:4px;">Available</div>
+        </div>
+        <div class="text-center px-5 py-4 rounded-2xl min-w-[100px]" style="background:rgba(255,255,255,0.06);border:1px solid rgba(200,169,106,0.2);">
+          <div class="display" style="font-size:1.35rem;font-weight:600;color:#C8A96A;line-height:1.1;">Remote<br>Ready</div>
+          <div style="font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,243,236,0.5);margin-top:4px;">Cloud pipeline</div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="rounded-2xl p-5 text-sm" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:rgba(247,243,236,0.65);">
+        <div style="color:#C8A96A;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;margin-bottom:6px;">Washington DC / DMV</div>
+        Federal agencies, think tanks, nonprofits, policy orgs, and premium broadcast channels.
+      </div>
+      <div class="rounded-2xl p-5 text-sm" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:rgba(247,243,236,0.65);">
+        <div style="color:#C8A96A;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;margin-bottom:6px;">New York / LA</div>
+        Film studios, record labels, advertising agencies, and streaming mastering pipelines.
+      </div>
+      <div class="rounded-2xl p-5 text-sm" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:rgba(247,243,236,0.65);">
+        <div style="color:#C8A96A;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;margin-bottom:6px;">Southeast / Sunbelt</div>
+        Production outfits, commercial brands, documentary filmmakers, and enterprise profiles.
+      </div>
+      <div class="rounded-2xl p-5 text-sm" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:rgba(247,243,236,0.65);">
+        <div style="color:#C8A96A;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;margin-bottom:6px;">Remote Post Pipeline</div>
+        Secure, uncompressed remote workflows, cloud validation, and automated multi-format delivery.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+  <div class="mb-12 grid md:grid-cols-[0.9fr_1.1fr] gap-12">
+    <div>
+      <div class="section-eyebrow mb-4">Services</div>
+      <h2 class="display" style="font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1.15;color:#15202B;">A complete production-to-post pipeline for work that needs to land.</h2>
+    </div>
+    <p class="text-base leading-8 self-end" style="color:#475569;">From large-format field capture through reference HDR finishing and Dolby Atmos spatial mixing — every stage connects, every asset is protected, every delivery is verified.</p>
+  </div>
+  <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+    <div class="card-hover cap-card">
+      <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M15 10l4.553-2.069A1 1 0 0121 8.868V15.13a1 1 0 01-1.447.899L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg></div>
+      <h3 class="font-semibold text-base" style="color:#15202B;">Large-Format Cinematography</h3>
+      <ul class="cap-list">
+        <li>12K cinema acquisition &amp; aerial imaging</li>
+        <li>Multi-camera narrative &amp; documentary</li>
+        <li>Commercial drone operations nationwide</li>
+        <li>Professional multi-track location audio</li>
+        <li>Full lighting and production support</li>
+      </ul>
+    </div>
+    <div class="card-hover cap-card">
+      <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+      <h3 class="font-semibold text-base" style="color:#15202B;">Reference HDR Color</h3>
+      <ul class="cap-list">
+        <li>HDR &amp; SDR simultaneous grade finishing</li>
+        <li>Theatrical and streaming delivery</li>
+        <li>Attended client color review sessions</li>
+        <li>Look development &amp; color space management</li>
+        <li>Broadcast QC and master verification</li>
+      </ul>
+    </div>
+    <div class="card-hover cap-card">
+      <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M9 18V5l12-2v13M9 18a2 2 0 01-4 0 2 2 0 014 0zm12-2a2 2 0 01-4 0 2 2 0 014 0z"/></svg></div>
+      <h3 class="font-semibold text-base" style="color:#15202B;">Dolby Atmos &amp; Audio Post</h3>
+      <ul class="cap-list">
+        <li>Immersive Atmos mixing capability</li>
+        <li>Built for streaming platform specs</li>
+        <li>Dialogue editing, ADR &amp; voiceover</li>
+        <li>Stereo mastering &amp; spatial music</li>
+        <li>Hybrid analog processing chain</li>
+      </ul>
+    </div>
+    <div class="card-hover cap-card">
+      <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+      <h3 class="font-semibold text-base" style="color:#15202B;">Agency &amp; Institutional Media</h3>
+      <ul class="cap-list">
+        <li>Full-cycle multimedia production</li>
+        <li>Government &amp; nonprofit communications</li>
+        <li>Training, PSA &amp; documentary content</li>
+        <li>Corporate brand film &amp; campaign media</li>
+        <li>Nationwide project deployment</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="border-top:1px solid #DDD3C6;border-bottom:1px solid #DDD3C6;background:rgba(244,238,229,0.85);">
+  <div class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+    <div class="mb-14 grid md:grid-cols-[1fr_0.9fr] gap-12 md:items-end">
+      <div>
+        <div class="section-eyebrow mb-4">About</div>
+        <h2 class="display" style="font-size:clamp(2rem,4.5vw,3.5rem);font-weight:500;line-height:1.1;color:#15202B;">
+          Built by someone who understands both sides of the table.
+        </h2>
+      </div>
+      <p class="text-base leading-8 self-end" style="color:#475569;">
+        Most studios know production. Most agencies know process. Pickering Motion Works knows both — and that changes everything about how a project gets built, approved, and delivered.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-[1fr_0.95fr] gap-12 md:items-start">
+      <div>
+        <p class="text-base leading-8 mb-5" style="color:#475569;">
+          Pickering Motion Works was founded by a U.S. veteran with a deep background in federal institutional work and a professional career in photography — a rare combination of creative instinct, technical depth, and process discipline that most boutique studios simply don't have.
+        </p>
+        <p class="text-base leading-8 mb-8" style="color:#475569;">
+          That background means fewer surprises for clients, tighter workflows, and deliverables built to spec from day one — whether the spec comes from a streaming platform, a museum curator, a music label, or a government communications office.
+        </p>
+        <div class="flex flex-col gap-3">
+          <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Boutique attention — not assembly-line throughput</div>
+          <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Institutional fluency with how agencies think and how projects get done</div>
+          <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Technical credibility matched with premium client-facing experience</div>
+          <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Veteran-owned · Nationwide project deployment available</div>
+        </div>
+      </div>
+      <div class="rounded-[2rem] border p-8" style="border-color:#D8CEBF;background:linear-gradient(135deg,rgba(255,255,255,0.85),#EFE7DC);box-shadow:0 8px 40px rgba(221,211,198,0.2);">
+        <div class="display mb-5" style="font-size:1.6rem;font-weight:500;color:#15202B;line-height:1.25;font-style:italic;">
+          "We know what a deliverable means — because we've been on both sides of the contract."
+        </div>
+        <p class="text-sm leading-7 mb-6" style="color:#475569;">
+          Independent films, documentaries, music projects, agency campaigns, and institutional media all benefit from a studio that combines uncompromised technical standards with the kind of process discipline that actually makes projects close on time.
+        </p>
+        <div class="pt-5 border-t" style="border-color:#D8CEBF;">
+          <div class="section-eyebrow mb-2">Who we serve</div>
+          <p class="text-sm leading-7" style="color:#475569;">Filmmakers · Directors · Music labels · Agencies · Nonprofits · Institutions · Brands · Streaming platforms</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIOS -->
+<section id="studios" style="border-bottom:1px solid #DDD3C6;background:rgba(242,235,226,0.85);">
+  <div class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+    <div class="mb-10">
+      <div class="section-eyebrow mb-4">Infrastructure</div>
+      <h2 class="display" style="font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1.15;color:#15202B;">Three wings. One uncompromised standard.</h2>
+      <p class="mt-4 max-w-2xl text-base leading-8" style="color:#475569;">A production division, a flagship Atmos music and hybrid mixing suite, and a dedicated HDR finishing and Fairlight post room — each purpose-built, each connected.</p>
+    </div>
+    <div class="flex flex-wrap gap-3 mb-8">
+      <button class="tab-btn active" onclick="switchTab('field',event)">Field Production</button>
+      <button class="tab-btn" onclick="switchTab('studioa',event)">Studio A — Atmos Music &amp; Mixing</button>
+      <button class="tab-btn" onclick="switchTab('studiob',event)">Studio B — Fairlight Post &amp; HDR</button>
+    </div>
+
+    <div class="relative w-full">
+
+      <!-- FIELD TAB -->
+      <div id="tab-field" class="tab-panel active">
+        <div class="grid gap-5 md:grid-cols-3">
+          <div class="cap-card md:col-span-3 mb-2" style="background:rgba(200,169,106,0.06);border-color:rgba(200,169,106,0.3);">
+            <p class="text-sm leading-7" style="color:#7C6A48;font-weight:500;">Our field production division deploys nationwide — combining cinema-grade large-format cameras, precision aerial systems, and professional location audio into one coordinated capture workflow. Assets arrive at the studio clean, synced, and ready for post.</p>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M15 10l4.553-2.069A1 1 0 0121 8.868V15.13a1 1 0 01-1.447.899L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Camera &amp; Optics</h3>
+            <ul class="cap-list">
+              <li>12K large-format cinema acquisition</li>
+              <li>Dual 8K gimbal camera systems</li>
+              <li>Full cinema prime lens ecosystem (18–135mm)</li>
+              <li>Anamorphic and spherical coverage</li>
+              <li>High-frame-rate &amp; slow-motion capability</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Aerial &amp; Remote Systems</h3>
+            <ul class="cap-list">
+              <li>FAA-certified commercial drone operations</li>
+              <li>Precision RTK GPS positioning</li>
+              <li>High-bright live monitoring on set</li>
+              <li>Remote follow-focus and lens control</li>
+              <li>Nationwide deployment capability</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4m-4 0h8"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Location Audio</h3>
+            <ul class="cap-list">
+              <li>Multi-track location field recording</li>
+              <li>Broadcast-grade boom and wireless systems</li>
+              <li>Timecode-synced multi-device logging</li>
+              <li>Lavalier and plant microphone coverage</li>
+              <li>Redundant recording protection</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Lighting &amp; Power</h3>
+            <ul class="cap-list">
+              <li>Bi-color and RGBWW LED studio fixtures</li>
+              <li>High-output cinema lighting packages</li>
+              <li>Modifiers for hard, soft, and shaped light</li>
+              <li>Portable redundant power stations</li>
+              <li>Color-metered and spectrometer-verified</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M8 12h8M12 8v8"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">On-Set Monitoring &amp; DIT</h3>
+            <ul class="cap-list">
+              <li>HDR-capable on-set reference monitoring</li>
+              <li>Wireless video transmission systems</li>
+              <li>Redundant asset capture and verification</li>
+              <li>Waveform and exposure analysis</li>
+              <li>Seamless handoff into post pipeline</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Production Types Served</h3>
+            <ul class="cap-list">
+              <li>Narrative features &amp; short films</li>
+              <li>Documentary and journalism</li>
+              <li>Commercial and branded content</li>
+              <li>Institutional and government media</li>
+              <li>Music video and live event capture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- STUDIO A TAB -->
+      <div id="tab-studioa" class="tab-panel">
+        <div class="grid grid-cols-3 gap-4 mb-6 max-w-xs">
+          <div class="room-stat"><div class="room-stat-val">17'5"</div><div class="room-stat-label">Length</div></div>
+          <div class="room-stat"><div class="room-stat-val">12'</div><div class="room-stat-label">Width</div></div>
+          <div class="room-stat"><div class="room-stat-val">7'8"</div><div class="room-stat-label">Ceiling</div></div>
+        </div>
+        <div class="mb-6 rounded-2xl border px-5 py-4 text-sm max-w-3xl" style="border-color:rgba(200,169,106,0.4);background:rgba(200,169,106,0.06);color:#7C6A48;font-weight:500;">
+          Flagship Atmos music room · Premium hybrid analog mixing &amp; mastering · High-end vocal production · Cinematic audio finishing · Prestige client sessions
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M9 18V5l12-2v13M9 18a2 2 0 01-4 0 2 2 0 014 0zm12-2a2 2 0 01-4 0 2 2 0 014 0z"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Immersive Monitoring</h3>
+            <ul class="cap-list">
+              <li>Full 7.1.4 Dolby Atmos speaker array</li>
+              <li>Three-way LCR main monitors</li>
+              <li>Dedicated surround and height channels</li>
+              <li>Dual subwoofer low-end reference</li>
+              <li>Precision room calibration and DSP</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Hybrid Analog Processing</h3>
+            <ul class="cap-list">
+              <li>Recall-ready analog hardware chain</li>
+              <li>VCA, optical, and tube compression</li>
+              <li>Pultec-style and parametric EQ</li>
+              <li>Stereo bus and mix buss processing</li>
+              <li>32 channels analog plugin processing</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4m-4 0h8"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Vocal &amp; Instrument Recording</h3>
+            <ul class="cap-list">
+              <li>Reference-grade large-diaphragm vocal chain</li>
+              <li>Expressive MIDI keyboard controllers</li>
+              <li>Polyphonic expression performance surfaces</li>
+              <li>Professional drum machine and sampler</li>
+              <li>Full orchestral and synth software libraries</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">DAW &amp; Control</h3>
+            <ul class="cap-list">
+              <li>Pro Tools Ultimate — industry standard</li>
+              <li>DaVinci Resolve Studio — picture integration</li>
+              <li>Hardware fader control surface</li>
+              <li>Dante-networked audio routing</li>
+              <li>Apple M4 Max computer environment</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">What Studio A Is Built For</h3>
+            <ul class="cap-list">
+              <li>Atmos music mixing for Apple, Tidal &amp; Amazon specs</li>
+              <li>Stereo album mastering &amp; stem masters</li>
+              <li>Film score and cinematic audio finishing</li>
+              <li>Immersive post for streaming platforms</li>
+              <li>Hybrid analog-warmth tracking sessions</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Ideal Client Types</h3>
+            <ul class="cap-list">
+              <li>Recording artists and music producers</li>
+              <li>Independent and major label projects</li>
+              <li>Film composers and music supervisors</li>
+              <li>Streaming content audio post teams</li>
+              <li>Prestige sessions requiring analog warmth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- STUDIO B TAB -->
+      <div id="tab-studiob" class="tab-panel">
+        <div class="grid grid-cols-3 gap-4 mb-6 max-w-xs">
+          <div class="room-stat"><div class="room-stat-val">22'</div><div class="room-stat-label">Length</div></div>
+          <div class="room-stat"><div class="room-stat-val">9'10"</div><div class="room-stat-label">Width</div></div>
+          <div class="room-stat"><div class="room-stat-val">7'6"</div><div class="room-stat-label">Ceiling</div></div>
+        </div>
+        <div class="mb-6 rounded-2xl border px-5 py-4 text-sm max-w-3xl" style="border-color:rgba(200,169,106,0.4);background:rgba(200,169,106,0.06);color:#7C6A48;font-weight:500;">
+          Fairlight finishing &amp; editing · HDR color grading · Dolby Atmos 7.1.4 post · Stereo music mixing reference · Client attended sessions
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">HDR Reference Monitoring</h3>
+            <ul class="cap-list">
+              <li>Mastering-grade reference HDR display</li>
+              <li>Triple-screen client review configuration</li>
+              <li>True black, peak brightness HDR reference</li>
+              <li>Rec.2020 / P3 / Rec.709 color coverage</li>
+              <li>4K Extreme I/O signal path</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Color &amp; Fairlight Post</h3>
+            <ul class="cap-list">
+              <li>DaVinci Resolve Studio color finishing</li>
+              <li>Fairlight hardware console audio control</li>
+              <li>Simultaneous picture and sound finishing</li>
+              <li>Loudness-compliant broadcast deliverables</li>
+              <li>Multi-format master file generation</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M9 18V5l12-2v13M9 18a2 2 0 01-4 0 2 2 0 014 0zm12-2a2 2 0 01-4 0 2 2 0 014 0z"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Atmos Post Monitoring</h3>
+            <ul class="cap-list">
+              <li>Full 7.1.4 immersive array</li>
+              <li>Precision monitor calibration</li>
+              <li>Multi-speaker room correction and alignment</li>
+              <li>Dedicated hardware stereo reference</li>
+              <li>Planar magnetic headphone verification</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4m-4 0h8"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Audio Post Capabilities</h3>
+            <ul class="cap-list">
+              <li>Dolby Atmos immersive mixing capability</li>
+              <li>Dialogue edit, cleanup and restoration</li>
+              <li>ADR, voiceover and narration recording</li>
+              <li>Stereo music mixing reference checks</li>
+              <li>M&amp;E stems and versioning</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">What Studio B Is Built For</h3>
+            <ul class="cap-list">
+              <li>Designed for professional streaming &amp; broadcast delivery workflows</li>
+              <li>Theatrical and broadcast master preparation</li>
+              <li>Atmos post for film and documentary</li>
+              <li>Agency and institutional finishing sessions</li>
+              <li>Complete picture-lock-to-delivery pipeline</li>
+            </ul>
+          </div>
+          <div class="card-hover cap-card">
+            <div class="cap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3 class="font-semibold text-base mb-1" style="color:#15202B;">Ideal Client Types</h3>
+            <ul class="cap-list">
+              <li>Film directors and picture editors</li>
+              <li>Streaming platform post coordinators</li>
+              <li>Agencies needing HDR client reviews</li>
+              <li>Documentary and institutional media teams</li>
+              <li>Colorists needing a reference environment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+  <div class="rounded-[2rem] border text-center p-10 md:p-16" style="border-color:rgba(200,169,106,0.5);background:rgba(255,255,255,0.55);backdrop-filter:blur(12px);">
+    <div class="nation-badge mx-auto mb-6"><span class="pulse-dot" style="width:7px;height:7px;border-radius:50%;background:#facc15;display:inline-block;"></span>Opening 2026 — Inquiries welcome now</div>
+    <h2 class="display mx-auto max-w-3xl" style="font-size:clamp(2rem,4.5vw,3.2rem);font-weight:500;line-height:1.15;color:#15202B;">Currently in build. Accepting early inquiries now.</h2>
+    <p class="mt-6 mx-auto max-w-2xl text-base leading-8" style="color:#475569;">Pickering Motion Works is currently completing its studio infrastructure and will be accepting its first projects upon opening in 2026. We welcome early conversations — reach out now to discuss your project and get on our calendar ahead of launch.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <span class="pill">Independent Features</span>
+      <span class="pill">Documentaries</span>
+      <span class="pill">Agency Campaigns</span>
+      <span class="pill">Atmos Music</span>
+      <span class="pill">Institutional Media</span>
+      <span class="pill">Branded Content</span>
+    </div>
+    <a href="#contact" class="mt-8 inline-block rounded-2xl px-8 py-3.5 text-sm font-semibold text-white transition" style="background:#C8A96A;" onmouseover="this.style.background='#B8996A'" onmouseout="this.style.background='#C8A96A'">Inquire About Availability</a>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section style="border-top:1px solid #DDD3C6;border-bottom:1px solid #DDD3C6;background:linear-gradient(to bottom,#EFE6D9,transparent);">
+  <div class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+    <div class="grid gap-10 md:grid-cols-[1fr_0.9fr] md:items-center mb-12">
+      <div>
+        <div class="section-eyebrow mb-4">Process</div>
+        <h2 class="display" style="font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1.15;color:#15202B;">Clear from first conversation to final delivery.</h2>
+      </div>
+      <div class="rounded-3xl border p-7 text-base leading-8" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#475569;">Every project gets a structured workflow built around your creative goals, your delivery specs, and your timeline — not a template.</div>
+    </div>
+    <div class="grid gap-5 md:grid-cols-3">
+      <div class="card-hover rounded-3xl border p-7" style="border-color:#D8CEBF;background:rgba(255,255,255,0.76);">
+        <div class="section-eyebrow mb-4">01 · Discovery</div>
+        <h3 class="font-semibold text-xl mb-3" style="color:#15202B;">Project Scope &amp; Goals</h3>
+        <p class="text-sm leading-7" style="color:#475569;">We review your creative vision, technical delivery targets, distribution path, and timeline — then build a plan that fits your project, not a generic package.</p>
+      </div>
+      <div class="card-hover rounded-3xl border p-7" style="border-color:#D8CEBF;background:rgba(255,255,255,0.76);">
+        <div class="section-eyebrow mb-4">02 · Execution</div>
+        <h3 class="font-semibold text-xl mb-3" style="color:#15202B;">Capture, Color &amp; Sound</h3>
+        <p class="text-sm leading-7" style="color:#475569;">Field-captured assets flow directly into calibrated color suites and Atmos mixing environments — no handoff friction, no dropped metadata, no surprises.</p>
+      </div>
+      <div class="card-hover rounded-3xl border p-7" style="border-color:#D8CEBF;background:rgba(255,255,255,0.76);">
+        <div class="section-eyebrow mb-4">03 · Delivery</div>
+        <h3 class="font-semibold text-xl mb-3" style="color:#15202B;">QC, Review &amp; Handoff</h3>
+        <p class="text-sm leading-7" style="color:#475569;">Final deliverables go through rigorous quality control and translation validation before master file handoff — confident, compliant, and complete.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<!-- FIX 3: added Formspree action and method so form submissions actually send -->
+<section id="contact" class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+  <div class="rounded-[2rem] border p-8 md:p-12" style="border-color:#D8CEBF;background:rgba(255,255,255,0.76);box-shadow:0 12px 60px rgba(221,211,198,0.2);">
+    <div class="grid gap-12 md:grid-cols-[1fr_1.1fr] md:items-start">
+      <div>
+        <div class="section-eyebrow mb-4">Contact</div>
+        <h2 class="display" style="font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1.15;color:#15202B;">Let's talk about your project.</h2>
+        <p class="mt-5 text-base leading-8 max-w-sm" style="color:#475569;">Whether you're a filmmaker, agency, label, or institution — tell us what you're building and we'll tell you how we can help.</p>
+        <div class="mt-8 flex flex-col gap-3">
+          <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Silver Spring, Maryland — available nationwide</div>
+          <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Veteran-owned boutique production and post</div>
+          <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Remote post and secure cloud delivery available</div>
+          <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Opening 2026 — early inquiries welcome now</div>
+          <div class="flex items-start gap-3 text-sm mt-2" style="color:#475569;">
+            <span style="color:#C8A96A;font-size:1rem;margin-top:1px;">✉</span>
+            <a href="mailto:projects@pickeringmotionworks.com" style="color:#C8A96A;text-decoration:none;font-weight:500;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">projects@pickeringmotionworks.com</a>
+          </div>
+        </div>
+      </div>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-4 rounded-2xl border p-6" style="border-color:#D8CEBF;background:#FAF7F2;">
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div><label for="name" class="intake-label">Your Name</label><input id="name" name="name" type="text" class="intake-input" placeholder="Jane Smith" required></div>
+          <div><label for="email" class="intake-label">Email Address</label><input id="email" name="email" type="email" class="intake-input" placeholder="jane@studio.com" required></div>
+        </div>
+        <div><label for="org" class="intake-label">Organization or Company</label><input id="org" name="organization" type="text" class="intake-input" placeholder="Agency, studio, institution, or independent"></div>
+        <div>
+          <label for="project-type" class="intake-label">Project Type</label>
+          <select id="project-type" name="project_type" class="intake-input">
+            <option>Independent Film / Narrative Feature</option>
+            <option>Documentary Production</option>
+            <option>Agency / Brand Campaign</option>
+            <option>Institutional / Government Media</option>
+            <option>Music &amp; Spatial Audio</option>
+            <option>Commercial &amp; Branded Content</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="intake-label mb-3 block">Services Needed</label>
+          <div class="grid gap-2 sm:grid-cols-2">
+            <label class="check-item"><input type="checkbox" name="services" value="Large-Format Cinematography"> Large-Format Cinematography</label>
+            <label class="check-item"><input type="checkbox" name="services" value="HDR Color Finishing"> HDR Color Finishing</label>
+            <label class="check-item"><input type="checkbox" name="services" value="Dolby Atmos Mixing"> Dolby Atmos Mixing</label>
+            <label class="check-item"><input type="checkbox" name="services" value="Dialogue / ADR / Voiceover"> Dialogue / ADR / Voiceover</label>
+            <label class="check-item"><input type="checkbox" name="services" value="Agency / Institutional Media"> Agency / Institutional Media</label>
+            <label class="check-item"><input type="checkbox" name="services" value="Full Pipeline"> Full Pipeline (Capture to Delivery)</label>
+          </div>
+        </div>
+        <div><label for="message" class="intake-label">Tell us about your project</label><textarea id="message" name="message" rows="4" class="intake-input" placeholder="Describe your project, timeline, and any specific delivery requirements..." required></textarea></div>
+        <button type="submit" class="w-full rounded-xl py-3.5 text-sm font-semibold uppercase tracking-widest transition" style="background:#15202B;color:#F7F3EC;" onmouseover="this.style.background='#C8A96A'" onmouseout="this.style.background='#15202B'">Send Project Inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:#15202B;border-top:1px solid rgba(200,169,106,0.15);">
+  <div class="mx-auto max-w-7xl px-6 py-12 grid md:grid-cols-[1fr_auto] gap-8 items-center">
+    <div>
+      <div class="inline-flex items-center gap-3 mb-5">
+        <div style="width:36px;height:36px;border-radius:10px;background:rgba(200,169,106,0.15);border:1px solid rgba(200,169,106,0.3);display:flex;align-items:center;justify-content:center;color:#C8A96A;font-family:'Cormorant Garamond',serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;">PMW</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;color:#F7F3EC;letter-spacing:0.03em;">Pickering <span style="color:#C8A96A;">Motion</span> Works</div>
+      </div>
+      <p style="font-size:0.75rem;color:rgba(247,243,236,0.4);letter-spacing:0.05em;line-height:1.8;">© 2026 Pickering Motion Works. All rights reserved.<br>Veteran-Owned &amp; Operated · Silver Spring, Maryland · Available Nationwide</p>
+    </div>
+    <div class="flex flex-col gap-2 text-right">
+      <a href="#services" class="text-xs transition" style="color:rgba(247,243,236,0.5);letter-spacing:0.1em;text-transform:uppercase;" onmouseover="this.style.color='#C8A96A'" onmouseout="this.style.color='rgba(247,243,236,0.5)'">Services</a>
+      <a href="#about" class="text-xs transition" style="color:rgba(247,243,236,0.5);letter-spacing:0.1em;text-transform:uppercase;" onmouseover="this.style.color='#C8A96A'" onmouseout="this.style.color='rgba(247,243,236,0.5)'">About</a>
+      <a href="#studios" class="text-xs transition" style="color:rgba(247,243,236,0.5);letter-spacing:0.1em;text-transform:uppercase;" onmouseover="this.style.color='#C8A96A'" onmouseout="this.style.color='rgba(247,243,236,0.5)'">Studios</a>
+      <a href="#contact" class="text-xs transition" style="color:rgba(247,243,236,0.5);letter-spacing:0.1em;text-transform:uppercase;" onmouseover="this.style.color='#C8A96A'" onmouseout="this.style.color='rgba(247,243,236,0.5)'">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function switchTab(id, event) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  const targetPanel = document.getElementById('tab-' + id);
+  if (targetPanel) targetPanel.classList.add('active');
+  if (event && event.target) event.target.classList.add('active');
+}
+
+const mobileBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileBars = document.querySelectorAll('.mobile-bar');
+
+function closeMobileMenu() {
+  mobileMenu.classList.add('hidden');
+  mobileBtn.setAttribute('aria-expanded', 'false');
+  mobileBars[0].style.transform = '';
+  mobileBars[1].style.opacity = '1';
+  mobileBars[2].style.transform = '';
+}
+
+mobileBtn.addEventListener('click', () => {
+  const isOpen = !mobileMenu.classList.contains('hidden');
+  if (isOpen) {
+    closeMobileMenu();
+  } else {
+    mobileMenu.classList.remove('hidden');
+    mobileBtn.setAttribute('aria-expanded', 'true');
+    mobileBars[0].style.transform = 'translateY(8px) rotate(45deg)';
+    mobileBars[1].style.opacity = '0';
+    mobileBars[2].style.transform = 'translateY(-8px) rotate(-45deg)';
+  }
+});
+</script>
+</body>
+</html>
