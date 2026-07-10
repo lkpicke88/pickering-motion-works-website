@@ -99,7 +99,29 @@
     .room-stat-val { font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:500; color:#15202B; line-height:1; }
     .room-stat-label { font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:#7C6A48; margin-top:4px; }
 
-    /* ── SCROLL REVEAL ── */
+    /* ── HERO BACKGROUND IMAGE ── */
+    /* To activate: replace 'none' below with your image URL */
+    /* Example: url('https://www.pickeringmotionworks.com/studio-hero.jpg') */
+    :root {
+      --hero-bg-image: none;
+    }
+    .hero-bg-image {
+      position: relative;
+    }
+    .hero-bg-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: var(--hero-bg-image);
+      background-size: cover;
+      background-position: center 30%;
+      background-repeat: no-repeat;
+      opacity: 0.07;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-bg-image > * { position: relative; z-index: 1; }
     .reveal {
       opacity: 0;
       transform: translateY(28px);
@@ -280,7 +302,7 @@
 <main>
 
 <!-- HERO -->
-<section class="mx-auto max-w-7xl px-6 pt-16 pb-24 md:pt-24 md:pb-32 hero-gradient-bg">
+<section class="mx-auto max-w-7xl px-6 pt-16 pb-24 md:pt-24 md:pb-32 hero-gradient-bg hero-bg-image">
   <div class="fade-up fade-up-1 mb-6 flex flex-wrap gap-3">
     <span class="nation-badge"><span class="pulse-dot" style="width:7px;height:7px;border-radius:50%;background:#facc15;display:inline-block;"></span>Opening 2026 — Inquiries welcome</span>
     <span class="pill">Cinematography</span>
@@ -320,8 +342,8 @@
         <div class="display" style="font-size:1.4rem;font-weight:500;color:#15202B;">Picture · Sound · Motion · Delivery</div>
       </div>
       <div class="float-a" style="padding:1.5rem;border-radius:20px;border:1px solid rgba(200,169,106,0.4);background:rgba(255,255,255,0.72);">
-        <div class="section-eyebrow mb-3">Veteran-Owned</div>
-        <div class="text-sm leading-6" style="color:#475569;">Founded and operated by a U.S. veteran with deep institutional experience — building a studio designed to bring process discipline and creative excellence to every project.</div>
+        <div class="section-eyebrow mb-3">Our Standard</div>
+        <div class="text-sm leading-6" style="color:#475569;">Built with the process discipline of institutional work and the creative instinct of professional photography — a studio designed to make projects close on time and land with confidence.</div>
       </div>
     </div>
   </div>
@@ -456,7 +478,7 @@
           <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Boutique attention — not assembly-line throughput</div>
           <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Institutional fluency with how agencies think and how projects get done</div>
           <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Technical credibility matched with premium client-facing experience</div>
-          <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Veteran-owned · Nationwide project deployment available</div>
+          <div class="rounded-2xl border px-5 py-4 text-sm font-medium" style="border-color:#D8CEBF;background:rgba(255,255,255,0.72);color:#334155;">Nationwide project deployment available</div>
         </div>
       </div>
       <div class="rounded-[2rem] border p-8" style="border-color:#D8CEBF;background:linear-gradient(135deg,rgba(255,255,255,0.85),#EFE7DC);box-shadow:0 8px 40px rgba(221,211,198,0.2);">
@@ -568,11 +590,6 @@
 
       <!-- STUDIO A TAB -->
       <div id="tab-studioa" class="tab-panel">
-        <div class="grid grid-cols-3 gap-4 mb-6 max-w-xs">
-          <div class="room-stat"><div class="room-stat-val">17'5"</div><div class="room-stat-label">Length</div></div>
-          <div class="room-stat"><div class="room-stat-val">12'</div><div class="room-stat-label">Width</div></div>
-          <div class="room-stat"><div class="room-stat-val">7'8"</div><div class="room-stat-label">Ceiling</div></div>
-        </div>
         <div class="mb-6 rounded-2xl border px-5 py-4 text-sm max-w-3xl" style="border-color:rgba(200,169,106,0.4);background:rgba(200,169,106,0.06);color:#7C6A48;font-weight:500;">
           Flagship Atmos music room · Premium hybrid analog mixing &amp; mastering · High-end vocal production · Cinematic audio finishing · Prestige client sessions
         </div>
@@ -648,11 +665,6 @@
 
       <!-- STUDIO B TAB -->
       <div id="tab-studiob" class="tab-panel">
-        <div class="grid grid-cols-3 gap-4 mb-6 max-w-xs">
-          <div class="room-stat"><div class="room-stat-val">22'</div><div class="room-stat-label">Length</div></div>
-          <div class="room-stat"><div class="room-stat-val">9'10"</div><div class="room-stat-label">Width</div></div>
-          <div class="room-stat"><div class="room-stat-val">7'6"</div><div class="room-stat-label">Ceiling</div></div>
-        </div>
         <div class="mb-6 rounded-2xl border px-5 py-4 text-sm max-w-3xl" style="border-color:rgba(200,169,106,0.4);background:rgba(200,169,106,0.06);color:#7C6A48;font-weight:500;">
           Fairlight finishing &amp; editing · HDR color grading · Dolby Atmos 7.1.4 post · Stereo music mixing reference · Client attended sessions
         </div>
@@ -789,7 +801,7 @@
         <p class="mt-5 text-base leading-8 max-w-sm" style="color:#475569;">Whether you're a filmmaker, agency, label, or institution — tell us what you're building and we'll tell you how we can help.</p>
         <div class="mt-8 flex flex-col gap-3">
           <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Silver Spring, Maryland — available nationwide</div>
-          <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Veteran-owned boutique production and post</div>
+          <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Boutique production and post — no assembly-line throughput</div>
           <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Remote post and secure cloud delivery available</div>
           <div class="flex items-start gap-3 text-sm" style="color:#475569;"><span style="color:#C8A96A;font-size:1rem;margin-top:1px;">→</span>Opening 2026 — early inquiries welcome now</div>
           <div class="flex items-start gap-3 text-sm mt-2" style="color:#475569;">
